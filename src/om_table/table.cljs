@@ -1,13 +1,9 @@
 (ns om-table.table
-  (:require-macros [cljs.core.async.macros :refer [go go-loop]])
   (:require [schema.core :as s :include-macros true]
             [om.core :as om :include-macros true]
             [om.dom :as dom :include-macros true]
-            [cljs.core.async :refer [>! put! <! chan timeout]]
             [clojure.string :as str]
             [clojure.set :refer [index]]))
-
-
 
 ;__________________________________________________________
 ;                                                          |
