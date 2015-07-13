@@ -178,6 +178,7 @@
 (defn pagination-view
   [o n c]
   (let [style (if (= n c) "btn-primary" "btn-default")]
+    (prn n c)
     (dom/button #js {:className (styles "btn" style)
                      :onClick   #(om/set-state! o :current-page n)}
                 (inc n))))
@@ -211,9 +212,11 @@
                                        (dom/tr #js {}
                                                (dom/th #js {:colSpan 7}
                                                        (dom/div #js {:className "table-footer"}
-                                                                (apply dom/div #js {:className "btn-group btn-group-lg"}
-                                                                       (for [n (range (count partitioned))]
-                                                                         (pagination-view o n current-page)))
+                                                                (if (= 1 (count partitioned))
+                                                                  (dom/div nil)
+                                                                  (apply dom/div #js {:className "btn-group btn-group-lg"}
+                                                                        (for [n (range (count partitioned))]
+                                                                          (pagination-view o n current-page))))
                                                                 (when-not no-nbr-items
                                                                   (apply dom/div #js {:className "btn-group btn-group-lg"}
                                                                         (for [n (take 3 (iterate #(* 5 %) 10))]
