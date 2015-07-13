@@ -1,9 +1,9 @@
-(defproject om-table "0.1.0"
+(defproject om-table "0.1.1"
             :description "A simple Om/React component to display tabular data. Pagination, Sorting and Filtering included"
             :url "https://github.com/hiram-madelaine/om-table"
             :license {:name "Eclipse Public License"
                       :url  "http://www.eclipse.org/legal/epl-v10.html"}
-            :profiles {:provided {:dependencies [[org.clojure/clojure "1.7.0-RC1"]
+            :profiles {:provided {:dependencies [[org.clojure/clojure "1.7.0"]
                                                  [org.clojure/clojurescript "0.0-3308"]
                                                  [org.omcljs/om "0.8.8"]]}}
             :dependencies [[prismatic/schema "0.4.3"]]
