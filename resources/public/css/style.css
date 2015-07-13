@@ -1,54 +1,6 @@
 /* some style */
 
 
-.sortable-header .btn {
-  width: 100%;
-  margin: 0px;
-  background-color: #ededed;
-}
-.asc {
-  cursor: n-resize;
-}
-.asc div.arrow {
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid grey;
-}
-.desc {
-  cursor: s-resize;
-}
-.desc div.arrow {
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 8px solid grey;
-}
-.no-sort {
-  cursor: s-resize;
-}
-.no-sort div.arrow {
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 8px solid #ededed;
-}
-.table-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-.panel-view-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-
-
 
 
 #example {
